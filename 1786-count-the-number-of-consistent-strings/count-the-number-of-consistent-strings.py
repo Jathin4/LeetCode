@@ -2,7 +2,6 @@ class Solution(object):
     def countConsistentStrings(self, allowed, words):
         count = 0
         s = set(allowed)
-        flag = True
         for word in words:
             flag=True
             for i in word:
