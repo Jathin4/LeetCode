@@ -6,10 +6,8 @@ class Solution(object):
         """
         c = 0
         for i in operations:
-            if i == "--X":
-                c -= 1
-            elif i == "X--":
-                c -= 1
-            else:
+            if i[1] == "+":
                 c += 1
+            else:
+                c -= 1
         return c
